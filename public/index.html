@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>        
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
+        <script src="asset/js/login.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>myfkproject.</h1>
+            <p class="subtitle">A single stop to find all the memes that you need.</p>
+            
+            <form id="loginForm" onsubmit="event.preventDefault();">
+                <input name="email" type="text" placeholder="Email">
+                <input name="password" type="password" placeholder="Password">
+                <input id="signIn" type="submit" value="Sign In">
+                <p>Not a member yet? Click <span id="signUp">here</span> to Register</p>
+            </form>
+        </div>
+    </body>
+    <script>
+        firebase.initializeApp({
+            "apiKey": "AIzaSyBwoKijOCXm4sRDW-fE32C2Q4twhI51P0A",
+            "databaseURL": "https://myfkproject.firebaseio.com",
+            "storageBucket": "myfkproject.appspot.com",
+            "authDomain": "myfkproject.firebaseapp.com",
+            "messagingSenderId": "121486604247",
+            "projectId": "myfkproject"
+        });
+    </script>
+</html>
